@@ -1,5 +1,5 @@
 package com.company;
-
+//calculate the first sixteen number of Fibonacci
 public class App4_5 {
     public static void main(String[] args) {
         final int MAX = 15;
