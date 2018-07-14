@@ -1,0 +1,12 @@
+package com.company;
+
+public class Exe4_3 {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 100; i++)
+            if (i % 3 == 0 && i % 7 == 0)
+                System.out.println(i);//";"表示一个完整的语句（说话一样）；所以for, if 后面不需要分号。
+
+    }
+}
+
