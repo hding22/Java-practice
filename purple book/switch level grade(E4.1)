@@ -1,13 +1,10 @@
-//DETERMINE THE GRADE OF STUDENTS (1-100) TO A.B.C.D.E
-
 package com.company;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Exe4_1 {
 //determine the level grade of students
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         int n;
 
         Scanner reader = new Scanner(System.in);
