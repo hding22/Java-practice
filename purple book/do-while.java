@@ -1,5 +1,5 @@
 package com.company;
-//do-while
+//do-while, enter a positive integer and calculate from 1 to 10
 
 import java.util.*;
 
