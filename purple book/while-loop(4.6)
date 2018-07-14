@@ -1,0 +1,25 @@
+package com.company;
+
+import java.io.*;
+//determine whether a number is Fibonacci number
+
+public class App4_6 {
+    public static void main(String[] args) throws IOException {
+        int a = 0, b = 1, n, num;
+        String str;
+        BufferedReader buf;
+        buf = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("please enter a positive integer:");
+        str = buf.readLine();
+        num = Integer.parseInt(str);
+        while (b < num) {
+            n = a + b;
+            a = b;
+            b = n;
+        }
+        if (num == b) System.out.println(num + " is Fibonacci number");
+        else System.out.println(num + " is not Fibonacci number");
+    }
+}
+
+
