@@ -1,0 +1,39 @@
+//DETERMINE THE GRADE OF STUDENTS (1-100) TO A.B.C.D.E
+
+package com.company;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Exe4_1 {
+//determine the level grade of students
+    public static void main(String[] args) throws IOException {
+        int n;
+
+        Scanner reader = new Scanner(System.in);
+        System.out.println("please enter a number between 1-100");
+        n = reader.nextInt();
+        n /= 20;
+        switch (n) {
+            case 0:
+                System.out.println("E");
+                break;
+            case 1:
+                System.out.println("D");
+                break;
+            case 2:
+                System.out.println("C");
+                break;
+            case 3:
+                System.out.println("B");
+                break;
+            case 4:
+            case 5:
+                System.out.println("A");
+                break;
+            default:
+                System.out.print("NULL");
+                break;
+        }
+    }
+}
