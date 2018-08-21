@@ -1,0 +1,20 @@
+Requirements:
+Convert KiloBytes to MegaBytes
+
+
+
+public class MegaBytesConverter {
+  public static void printMegaBytesAndKiloBytes(int k){
+      int a =k/1024;
+      int b=k%1024;
+      if(k<0){
+          System.out.println("Invalid Value");
+      }
+      else {
+          System.out.println(k+" KB = "+ a + " MB and " + b + " KB");
+      }
+      
+      
+  }
+}
+
