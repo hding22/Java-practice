@@ -1,0 +1,28 @@
+//We have to wake up if the dog is barking before 8 am or after 22 pm, in that case return true
+
+
+public class BarkingDog {
+    public static void main(String[] args) {
+        System.out.println(bark(true, 1));
+        System.out.println(bark(true, -5));
+        System.out.println(bark(true, 8));
+        System.out.println(bark(true, 33));
+        System.out.println(bark(true, 15));
+        System.out.println(bark(false,6));//test case
+        System.out.println(bark(false,10));//test case
+    }
+
+    public static boolean bark(boolean barking, int hourOfDay) {
+
+        if ((barking) && (hourOfDay < 8) && (hourOfDay > 0)) {
+            return true;
+
+        } else if ((barking) && (hourOfDay) > 22 && (hourOfDay <= 23)) {
+            return true;
+
+        } else {
+            return false;
+        }
+
+    }
+}
