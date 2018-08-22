@@ -1,0 +1,24 @@
+//Test whether a number is positive
+
+
+public class PositiveNegativeZero {
+    public static void main(String[] args) {   //type psvm use main method to test!
+        checkNumber(5);
+        checkNumber(0);
+    }
+
+    public static void checkNumber(int number) {
+        if (number > 0) {
+            System.out.println("positive");
+        } else if (number < 0) {
+            System.out.println("negative");
+
+        } else if (number == 0) {
+            System.out.println("zero");
+        }
+
+    }
+
+
+}
+
