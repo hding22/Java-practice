@@ -1,0 +1,45 @@
+package com.Bill;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(getDurationString(5000, 7));
+        System.out.println(getDurationString(8000));
+        System.out.println(getDurationString(-49));
+    }
+    private static final String INVALID_MESSAGE = "Invalid value";//USE OF CONSTANT IN THIS CASE
+
+    private static String getDurationString(int minutes, int seconds) {
+        int a = minutes / 60;
+        int b = minutes % 60;
+        if (minutes < 0 || seconds < 0 || seconds > 59) {
+            return INVALID_MESSAGE;
+        }
+        String hoursString = a + "h";
+        if (a < 10)
+        {
+            hoursString = "0" + hoursString;
+        };
+
+        String minutesString = b + "m";
+        if (b < 10)
+        {
+            minutesString = "0" + minutesString;
+        };
+
+        String secondsString = seconds + "s";
+        if (seconds < 10)
+        {
+            secondsString = "0" + secondsString;
+        };
+        return hoursString + " " + minutesString + " " + secondsString;
+    }
+    private static String getDurationString(int seconds) {
+        int c = seconds / 60;
+        int d = seconds % 60;
+        if (seconds < 0) {
+            return INVALID_MESSAGE;
+        }
+
+        return getDurationString(c, d);
+
+    }
+}
